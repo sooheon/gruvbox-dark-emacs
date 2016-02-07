@@ -3,7 +3,7 @@
 ;; Copyright (c) 2016 Dario Gjorgjevski
 
 ;; Author: Dario Gjorgjevski <dario.gjorgjevski@gmail.com>
-;; URL: http://github.com/Greduan/emacs-theme-gruvbox
+;; URL: http://github.com/d125q/gruvbox-dark-emacs
 ;; Version: 0.1
 
 ;; This program is free software; you can redistribute it and/or modify
