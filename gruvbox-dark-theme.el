@@ -84,7 +84,7 @@
       (gruvbox-faded_gray     (gruvbox--get-color "#7c6f64" "color-243")))
 
   (custom-theme-set-faces
-    'gruvbox
+    'gruvbox-dark
 
     ;; basic coloring
     '(button                            ((t (:underline t))))
