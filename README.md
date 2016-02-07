@@ -46,3 +46,5 @@ In the future I will be adding suppor for more modes.  However, since I cannot
 feasibly use and test all popular modes, contributions would be greatly
 appreciated.  Additionally, I will be adding some customizations to the theme
 (italic comments and/or strings among other things).
+
+[badge-license]: https://img.shields.io/badge/license-GPL_3-green.svg
