@@ -37,7 +37,7 @@
 (deftheme gruvbox-dark "A retro groove color theme")
 
 (defun gruvbox--get-color (graphic-color terminal-color)
-  "Switch between `GRAPHIC-COLOR' (for GUI) and `TERMINAL-COLOR' (for terminals)."
+  "Switch between GRAPHIC-COLOR (for GUI) and TERMINAL-COLOR (for terminals)."
   (if (display-graphic-p) graphic-color terminal-color))
 
 (let ((gruvbox-dark0_h        (gruvbox--get-color "#1d2021" "color-234"))
@@ -498,14 +498,41 @@
 
    ;; dired
    `(dired-directory  ((t (:foreground ,gruvbox-neutral_blue :weight bold))))
-   `(dired-flagged    ((t (:foreground ,gruvbox-bright_red :weight bold))))
+   `(dired-flagged    ((t (:foreground ,gruvbox-bright_red :weight bold :underline t))))
    `(dired-header     ((t (:background ,gruvbox-dark1 :foreground ,gruvbox-bright_yellow))))
    '(dired-ignored    ((t (:inherit shadow))))
    `(dired-mark       ((t (:foreground ,gruvbox-bright_green :weight bold))))
    `(dired-marked     ((t (:foreground ,gruvbox-bright_purple :weight bold))))
    `(dired-perm-write ((t (:foreground ,gruvbox-bright_yellow))))
    `(dired-symlink    ((t (:foreground ,gruvbox-neutral_aqua :slant italic))))
-   `(dired-warning    ((t (:foreground ,gruvbox-bright_orange :underline t))))))
+   `(dired-warning    ((t (:foreground ,gruvbox-bright_orange :underline t))))
+
+   ;; dired+
+   `(diredp-compressed-file-name   ((t (:foreground ,gruvbox-neutral_red :weight bold))))
+   `(diredp-compressed-file-suffix ((t (:foreground ,gruvbox-neutral_red :weight bold))))
+   `(diredp-date-time              ((t (:foreground ,gruvbox-neutral_purple))))
+   `(diredp-deletion               ((t (:foreground ,gruvbox-bright_red :weight bold))))
+   `(diredp-deletion-file-name     ((t (:foreground ,gruvbox-bright_red :weight bold :underline t))))
+   `(diredp-dir-heading            ((t (:background ,gruvbox-dark1 :foreground ,gruvbox-bright_yellow))))
+   `(diredp-dir-name               ((t (:foreground ,gruvbox-neutral_blue :weight bold))))
+   `(diredp-dir-priv               ((t (:foreground ,gruvbox-neutral_blue))))
+   `(diredp-exec-priv              ((t (:foreground ,gruvbox-neutral_green))))
+   `(diredp-executable-tag         ((t (:foreground ,gruvbox-neutral_green))))
+   `(diredp-file-name              ((t (:foreground ,gruvbox-light1))))
+   `(diredp-file-suffix            ((t (:foreground ,gruvbox-bright_green))))
+   `(diredp-flag-mark              ((t (:background ,gruvbox-dark1 :foreground ,gruvbox-bright_purple))))
+   `(diredp-flag-mark-line         ((t (:background ,gruvbox-dark1))))
+   '(diredp-ignored-file-name      ((t (:inherit shadow))))
+   `(diredp-link-priv              ((t (:foreground ,gruvbox-neutral_aqua))))
+   `(diredp-mode-line-flagged      ((t (:foreground ,gruvbox-bright_red))))
+   `(diredp-mode-line-marked       ((t (:foreground ,gruvbox-bright_purple))))
+   `(diredp-no-priv                ((t (:foreground ,gruvbox-light1))))
+   `(diredp-number                 ((t (:foreground ,gruvbox-bright_purple))))
+   `(diredp-other-priv             ((t (:foreground ,gruvbox-neutral_yellow))))
+   `(diredp-rare-priv              ((t (:foreground ,gruvbox-neutral_red))))
+   `(diredp-read-priv              ((t (:foreground ,gruvbox-neutral_green))))
+   `(diredp-symlink                ((t (:foreground ,gruvbox-neutral_aqua :slant italic))))
+   `(diredp-write-priv             ((t (:foreground ,gruvbox-neutral_orange))))))
 
 ;;;###autoload
 (and load-file-name
