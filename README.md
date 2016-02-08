@@ -64,7 +64,7 @@ Currently supported modes include:
 
 ## Screenshot
 
-[Screenshot][screenshot]
+![Screenshot][screenshot]
 
 
 [badge-license]: https://img.shields.io/badge/license-GPL_3-green.svg
