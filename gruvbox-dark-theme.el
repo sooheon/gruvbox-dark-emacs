@@ -1,4 +1,4 @@
-;;; gruvbox-dark-theme.el --- A retro-groove color theme for Emacs
+;;; gruvbox-dark-theme.el --- A retro groove color theme for GNU Emacs
 
 ;; Copyright (c) 2016 Dario Gjorgjevski
 
@@ -6,35 +6,35 @@
 ;; URL: http://github.com/d125q/gruvbox-dark-emacs
 ;; Version: 0.1
 
-;; This program is free software; you can redistribute it and/or modify
-;; it under the terms of the GNU General Public License as published by
-;; the Free Software Foundation, either version 3 of the License, or
-;; (at your option) any later version.
+;; This program is free software; you can redistribute it and/or modify it under
+;; the terms of the GNU General Public License as published by the Free Software
+;; Foundation, either version 3 of the License, or (at your option) any later
+;; version.
 
-;; This program is distributed in the hope that it will be useful,
-;; but WITHOUT ANY WARRANTY; without even the implied warranty of
-;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-;; GNU General Public License for more details.
+;; This program is distributed in the hope that it will be useful, but WITHOUT
+;; ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+;; FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more
+;; details.
 
-;; You should have received a copy of the GNU General Public License
-;; along with this program.  If not, see <http://www.gnu.org/licenses/>.
+;; You should have received a copy of the GNU General Public License along with
+;; this program.  If not, see <http://www.gnu.org/licenses/>.
 
 ;;; Commentary:
 
-;; The gruvbox colorscheme ported to Emacs.  Built on top of the new
-;; built-in theme support in Emacs 24.
+;; The gruvbox colors ported to Emacs.  Built on top of the new built-in theme
+;; support in Emacs 24.
 
 ;;; Credits:
 
-;; Pavel Pertsev created the original gruvbox theme for the Vim editor.
-;; This port is based entirely on his work.
+;; Pavel Pertsev created the original gruvbox theme for the Vim editor.  This
+;; port is based entirely on his work.
 
 ;;; Code:
 
 (unless (>= emacs-major-version 24)
   (error "Requires Emacs 24 or later"))
 
-(deftheme gruvbox-dark "A retro-groove color theme")
+(deftheme gruvbox-dark "A retro groove color theme")
 
 (defun gruvbox--get-color (graphic-color terminal-color)
   "Switch between `GRAPHIC-COLOR' (for GUI) and `TERMINAL-COLOR' (for terminals)."
@@ -494,7 +494,18 @@
    `(undo-tree-visualizer-current-face       ((t (:foreground ,gruvbox-bright_red))))
    `(undo-tree-visualizer-default-face       ((t (:foreground ,gruvbox-dark4))))
    `(undo-tree-visualizer-register-face      ((t (:foreground ,gruvbox-bright_yellow))))
-   `(undo-tree-visualizer-unmodified-face    ((t (:foreground ,gruvbox-bright_aqua))))))
+   `(undo-tree-visualizer-unmodified-face    ((t (:foreground ,gruvbox-bright_aqua))))
+
+   ;; dired
+   `(dired-directory  ((t (:foreground ,gruvbox-neutral_blue :weight bold))))
+   `(dired-flagged    ((t (:foreground ,gruvbox-bright_red :weight bold))))
+   `(dired-header     ((t (:background ,gruvbox-dark1 :foreground ,gruvbox-bright_yellow))))
+   '(dired-ignored    ((t (:inherit shadow))))
+   `(dired-mark       ((t (:foreground ,gruvbox-bright_green :weight bold))))
+   `(dired-marked     ((t (:foreground ,gruvbox-bright_purple :weight bold))))
+   `(dired-perm-write ((t (:foreground ,gruvbox-bright_yellow))))
+   `(dired-symlink    ((t (:foreground ,gruvbox-neutral_aqua :slant italic))))
+   `(dired-warning    ((t (:foreground ,gruvbox-bright_orange :underline t))))))
 
 ;;;###autoload
 (and load-file-name
