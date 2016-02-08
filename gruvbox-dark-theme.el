@@ -211,7 +211,7 @@
     ;; ido-mode
    `(ido-first-match ((t (:foreground ,gruvbox-bright_yellow :weight bold))))
    `(ido-only-match  ((t (:foreground ,gruvbox-bright_orange :weight bold))))
-   `(ido-subdir      ((t (:foreground ,gruvbox-bright_blue :weight bold))))
+   `(ido-subdir      ((t (:foreground ,gruvbox-neutral_blue :weight bold))))
    `(ido-indicator   ((t (:background ,gruvbox-bright_yellow :foreground ,gruvbox-dark0 :width condensed))))
 
    ;; message-mode
