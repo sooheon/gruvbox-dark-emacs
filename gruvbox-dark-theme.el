@@ -34,7 +34,7 @@
 (unless (>= emacs-major-version 24)
   (error "Requires Emacs 24 or later"))
 
-(deftheme gruvbox "A retro-groove color theme")
+(deftheme gruvbox-dark "A retro-groove color theme")
 
 (defun gruvbox--get-color (graphic-color terminal-color)
   "Switch between `GRAPHIC-COLOR' (for GUI) and `TERMINAL-COLOR' (for terminals)."
