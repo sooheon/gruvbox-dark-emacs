@@ -47,4 +47,25 @@ feasibly use and test all popular modes, contributions would be greatly
 appreciated.  Additionally, I will be adding some customizations to the theme
 (italic comments and/or strings among other things).
 
+### Supported modes
+
+Currently supported modes include:
+
+* [Gnus](http://www.gnus.org/)
+* [rainbow-delimiters](https://github.com/jlr/rainbow-delimiters)
+* [anzu](https://github.com/syohex/emacs-anzu)
+* [linum-relative](https://github.com/coldnew/linum-relative)
+* [ESS](http://ess.r-project.org/)
+* [SLIME](https://common-lisp.net/project/slime/)
+* [AUCTeX](https://www.gnu.org/software/auctex/)
+* [flycheck](https://github.com/flycheck/flycheck)
+* [flymake](https://www.gnu.org/software/emacs/manual/html_node/flymake/index.html)
+* [avy](https://github.com/abo-abo/avy)
+
+## Screenshot
+
+[Screenshot][screenshot]
+
+
 [badge-license]: https://img.shields.io/badge/license-GPL_3-green.svg
+[screenshot]: https://raw.githubusercontent.com/d125q/gruvbox-dark-emacs/master/screenshot.png
