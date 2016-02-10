@@ -171,13 +171,13 @@
     ;; compilation
     `(compilation-column-number        ((t (:foreground ,gruvbox-bright_aqua))))
     `(compilation-enter-directory-face ((t (:foreground ,gruvbox-bright_green))))
-    `(compilation-error                ((t (:inherit error))))
-    `(compilation-info                 ((t (:foreground ,gruvbox-bright_green :underline t))))
-    `(compilation-leave-directory-face ((t (:foreground ,gruvbox-bright_green))))
+    '(compilation-error                ((t (:inherit error))))
+    `(compilation-info                 ((t (:foreground ,gruvbox-bright_blue :underline t))))
+    `(compilation-leave-directory-face ((t (:foreground ,gruvbox-bright_blue))))
     `(compilation-line-number          ((t (:foreground ,gruvbox-bright_yellow))))
-    `(compilation-warning              ((t (:inherit warning))))
-    `(compilation-mode-line-exit       ((t (:weight bold))))
-    `(compilation-mode-line-fail       ((t (:weight bold :inherit compilation-error))))
+    '(compilation-warning              ((t (:inherit warning))))
+    `(compilation-mode-line-exit       ((t (:foreground ,gruvbox-bright_green :weight bold))))
+    `(compilation-mode-line-fail       ((t (:foreground ,gruvbox-bright_red :weight bold))))
     `(compilation-mode-line-run        ((t (:foreground ,gruvbox-bright_orange :weight bold))))
 
     ;; highlight-indentation-mode
@@ -496,7 +496,7 @@
    `(undo-tree-visualizer-register-face      ((t (:foreground ,gruvbox-bright_yellow))))
    `(undo-tree-visualizer-unmodified-face    ((t (:foreground ,gruvbox-bright_aqua))))
 
-   ;; dired
+   ;; dired{,+}
    `(dired-directory  ((t (:foreground ,gruvbox-neutral_blue :weight bold))))
    `(dired-flagged    ((t (:foreground ,gruvbox-bright_red :weight bold :underline t))))
    `(dired-header     ((t (:background ,gruvbox-dark1 :foreground ,gruvbox-bright_yellow))))
@@ -507,11 +507,10 @@
    `(dired-symlink    ((t (:foreground ,gruvbox-neutral_aqua :slant italic))))
    `(dired-warning    ((t (:foreground ,gruvbox-bright_orange :underline t))))
 
-   ;; dired+
    `(diredp-compressed-file-name   ((t (:foreground ,gruvbox-neutral_red :weight bold))))
    `(diredp-compressed-file-suffix ((t (:foreground ,gruvbox-neutral_red :weight bold))))
-   `(diredp-date-time              ((t (:foreground ,gruvbox-neutral_purple))))
-   `(diredp-deletion               ((t (:foreground ,gruvbox-bright_red :weight bold))))
+   `(diredp-date-time              ((t (:foreground ,gruvbox-bright_yellow))))
+   `(diredp-deletion               ((t (:foreground ,gruvbox-bright_red :weight bold :underline t))))
    `(diredp-deletion-file-name     ((t (:foreground ,gruvbox-bright_red :weight bold :underline t))))
    `(diredp-dir-heading            ((t (:background ,gruvbox-dark1 :foreground ,gruvbox-bright_yellow))))
    `(diredp-dir-name               ((t (:foreground ,gruvbox-neutral_blue :weight bold))))
@@ -524,13 +523,13 @@
    `(diredp-flag-mark-line         ((t (:background ,gruvbox-dark1))))
    '(diredp-ignored-file-name      ((t (:inherit shadow))))
    `(diredp-link-priv              ((t (:foreground ,gruvbox-neutral_aqua))))
-   `(diredp-mode-line-flagged      ((t (:foreground ,gruvbox-bright_red))))
-   `(diredp-mode-line-marked       ((t (:foreground ,gruvbox-bright_purple))))
+   `(diredp-mode-line-flagged      ((t (:foreground ,gruvbox-bright_red :weight bold))))
+   `(diredp-mode-line-marked       ((t (:foreground ,gruvbox-bright_purple :weight bold))))
    `(diredp-no-priv                ((t (:foreground ,gruvbox-light1))))
    `(diredp-number                 ((t (:foreground ,gruvbox-bright_purple))))
-   `(diredp-other-priv             ((t (:foreground ,gruvbox-neutral_yellow))))
+   `(diredp-other-priv             ((t (:foreground ,gruvbox-light1))))
    `(diredp-rare-priv              ((t (:foreground ,gruvbox-neutral_red))))
-   `(diredp-read-priv              ((t (:foreground ,gruvbox-neutral_green))))
+   `(diredp-read-priv              ((t (:foreground ,gruvbox-neutral_purple))))
    `(diredp-symlink                ((t (:foreground ,gruvbox-neutral_aqua :slant italic))))
    `(diredp-write-priv             ((t (:foreground ,gruvbox-neutral_orange))))))
 
