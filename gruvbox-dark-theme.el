@@ -507,6 +507,7 @@
    `(dired-symlink    ((t (:foreground ,gruvbox-neutral_aqua :slant italic))))
    `(dired-warning    ((t (:foreground ,gruvbox-bright_orange :underline t))))
 
+   `(diredp-autofile-name          ((t (:foreground ,gruvbox-light2))))
    `(diredp-compressed-file-name   ((t (:foreground ,gruvbox-neutral_red :weight bold))))
    `(diredp-compressed-file-suffix ((t (:foreground ,gruvbox-neutral_red :weight bold))))
    `(diredp-date-time              ((t (:foreground ,gruvbox-bright_yellow))))
@@ -531,6 +532,7 @@
    `(diredp-rare-priv              ((t (:foreground ,gruvbox-neutral_red))))
    `(diredp-read-priv              ((t (:foreground ,gruvbox-neutral_purple))))
    `(diredp-symlink                ((t (:foreground ,gruvbox-neutral_aqua :slant italic))))
+   `(diredp-tagged-autofile-name   ((t (:background ,gruvbox-dark0_s :foreground ,gruvbox-light2))))
    `(diredp-write-priv             ((t (:foreground ,gruvbox-neutral_orange))))))
 
 ;;;###autoload
